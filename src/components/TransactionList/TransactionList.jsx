@@ -97,6 +97,12 @@ const TransactionList = ({ refresh }) => {
                 stickyHeader
                 key={"table" + refresh + trigger}
               >
+                <colgroup>
+                    <col width="20%"></col>
+                    <col width="20%"></col>
+                    <col width="40%"></col>
+                    <col width="20%"></col>
+                </colgroup>
                 <TableHead>
                   <TableRow>
                     <TableCell>DATE</TableCell>
