@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "optacloud-d9e91",
+    "predeploy": "npm run build",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+    
+  }
+}
