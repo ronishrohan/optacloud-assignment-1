@@ -45,12 +45,12 @@ const AddTransactionForm = ({setRefresh}) => {
             <TextField
               required
               id="amount"
-              type="number"
-              slotProps={{ input: { min: 0 } }}
+              
+              inputProps={{type: "number", step:"any"}}
               label="Amount"
               variant="outlined"
               onChange={(e) =>
-                setTransaction({ ...transaction, amount: e.target.value })
+                setTransaction({ ...transaction, amount: Number(e.target.value) })
               }
             ></TextField>
             <TextField

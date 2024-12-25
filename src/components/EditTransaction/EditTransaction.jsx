@@ -58,12 +58,12 @@ const EditTransaction = ({ open, setOpen, initialTransaction, setRefresh }) => {
             <TextField
               required
               id="amount"
-              type="number"
+              inputProps={{type: "number", step:"any"}}
               label="Amount"
               variant="outlined"
               defaultValue={transaction.amount}
               onChange={(e) =>
-                setTransaction({ ...transaction, amount: e.target.value })
+                setTransaction({ ...transaction, amount: Number(e.target.value) })
               }
             ></TextField>
             <TextField
